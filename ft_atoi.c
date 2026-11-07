@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: roel-oua <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: roel-oua <roel-oua@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/07 09:36:49 by roel-oua          #+#    #+#             */
-/*   Updated: 2026/11/07 09:37:00 by roel-oua         ###   ########.fr       */
+/*   Created: 2026/11/07 20:13:34 by roel-oua          #+#    #+#             */
+/*   Updated: 2026/11/07 20:18:40 by roel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ static int	is_space(const char *str)
 
 int	ft_atoi(const char *str)
 {
-	int	sign;
-	int	result;
+	int		sign;
+	long	result;
 
 	sign = 1;
 	result = 0;

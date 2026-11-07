@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: roel-oua < roel-oua@student.1337.ma >      +#+  +:+       +#+        */
+/*   By: roel-oua <roel-oua@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/07 09:36:49 by roel-oua          #+#    #+#             */
-/*   Updated: 2026/11/07 11:35:09 by roel-oua         ###   ########.fr       */
+/*   Created: 2026/11/07 20:15:27 by roel-oua          #+#    #+#             */
+/*   Updated: 2026/11/07 21:13:43 by roel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,12 @@ static void	fill_join(char *new, char const *s1, char const *s2)
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	s1_len;
-	size_t	s2_len;
-	char	*new;
+	const size_t	s1_len = ft_strlen(s1);
+	const size_t	s2_len = ft_strlen(s2);
+	char			*new;
 
 	if (!s1 || !s2)
 		return (NULL);
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
 	if (s1_len > SIZE_MAX - s2_len - 1)
 		return (NULL);
 	new = malloc(s1_len + s2_len + 1);

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: roel-oua <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: roel-oua <roel-oua@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/07 09:36:49 by roel-oua          #+#    #+#             */
-/*   Updated: 2026/11/07 09:37:00 by roel-oua         ###   ########.fr       */
+/*   Created: 2026/11/07 20:14:59 by roel-oua          #+#    #+#             */
+/*   Updated: 2026/11/07 20:53:34 by roel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	d = (char *)dest;
 	s = (char *)src;
 	i = 0;
-	if (!n || dest == src)
-		return (dest);
 	if (d > s)
 	{
 		while (n--)
 			d[n] = s[n];
 	}
 	else
-	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
+		ft_memcpy(dest, src, n);
 	return (dest);
 }
