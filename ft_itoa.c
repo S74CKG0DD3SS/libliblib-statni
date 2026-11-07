@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: roel-oua <roel-oua@student.1337.ma>                      +#+  +:+       +#+        */
+/*   By: roel-oua < roel-oua@student.1337.ma >      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/07 09:24:18 by roel-oua             #+#    #+#             */
-/*   Updated: 2026/11/07 09:24:18 by roel-oua            ###   ########.fr       */
+/*   Created: 2026/11/07 09:36:49 by roel-oua          #+#    #+#             */
+/*   Updated: 2026/11/07 11:24:18 by roel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
@@ -27,6 +26,7 @@ static size_t	count_digits(long n)
 	} while (n != 0);
 	return (len);
 }
+
 char	*ft_itoa(int n)
 {
 	char	*str;

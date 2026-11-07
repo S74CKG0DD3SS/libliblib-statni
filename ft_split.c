@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: roel-oua <roel-oua@student.1337.ma>                      +#+  +:+       +#+        */
+/*   By: roel-oua <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/07 09:24:18 by roel-oua             #+#    #+#             */
-/*   Updated: 2026/11/07 09:24:18 by roel-oua            ###   ########.fr       */
+/*   Created: 2026/11/07 09:36:49 by roel-oua          #+#    #+#             */
+/*   Updated: 2026/11/07 09:37:00 by roel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,10 +70,10 @@ static size_t	find_word(const char *s, char c, size_t i, size_t *start)
 
 char	**ft_split(char const *s, char c)
 {
-	char **result;
-	size_t i;
-	size_t j;
-	size_t start;
+	char	**result;
+	size_t	i;
+	size_t	j;
+	size_t	start;
 
 	i = 0;
 	j = 0;
