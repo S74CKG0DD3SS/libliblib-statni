@@ -6,7 +6,7 @@
 /*   By: roel-oua <roel-oua@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/07 20:14:59 by roel-oua          #+#    #+#             */
-/*   Updated: 2026/11/07 20:53:34 by roel-oua         ###   ########.fr       */
+/*   Updated: 2026/11/07 22:16:37 by roel-oua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		while (n--)
 			d[n] = s[n];
 	}
-	else
+	else if (d < s)
 		ft_memcpy(dest, src, n);
 	return (dest);
 }
