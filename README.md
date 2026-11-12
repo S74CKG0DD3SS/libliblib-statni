@@ -91,14 +91,16 @@ cc -Wall -Wextra -Werror main.c -L. -lft -o my_program
 - [cppreference.com – C reference](https://en.cppreference.com/w/c)
 - The Linux Programming Interface.
 - [GNU Make Manual](https://www.gnu.org/software/make/manual/)
-
+- Youtube - NESO ACADEMY.
+- StackOverflow.
+- GeeksForGeeks.
 ### Use of AI
 
 I used AI as a learning tool during this project, mainly when I got stuck or needed to understand something better.
 
 I used it to:
-- Understand how some C functions work and why they are implemented that way.
-- Get explanations about pointers, memory allocation, and linked lists.
-- Help me find mistakes and understand what was going wrong in my code.
+- Understand the details of each topic i've learned.
+- Get clear of how memory works internally , supported by visualizations.
+- Learn how to identify mistakes in my code, understand what they happen, and figure out how to fix them.
 
 I still wrote, tested, and worked on the functions myself. AI was there to help me understand things, not to replace the learning process.
