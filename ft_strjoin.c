@@ -34,7 +34,7 @@ static void	fill_join(char *new, char const *s1, char const *s2)
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char			*new;
+	char	*new;
 	size_t	s1_len;
 	size_t	s2_len;
 
