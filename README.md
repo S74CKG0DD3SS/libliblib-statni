@@ -94,11 +94,13 @@ cc -Wall -Wextra -Werror main.c -L. -lft -o my_program
 - Youtube - NESO ACADEMY.
 - StackOverflow.
 - GeeksForGeeks.
+
 ### Use of AI
 
 I used AI as a learning tool during this project, mainly when I got stuck or needed to understand something better.
 
 I used it to:
+
 - Understand the details of each topic i've learned.
 - Get clear of how memory works internally , supported by visualizations.
 - Learn how to identify mistakes in my code, understand what they happen, and figure out how to fix them.
